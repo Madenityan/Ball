@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0 auto;
-    background:black;
+    background:#000;
 }
 
 .ball-container {
@@ -35,9 +35,17 @@ html, body {
 
     40% {
         bottom: 0;
+        height: 100px;
+        width: 110px;
+    }
+
+
+    89% {
+        bottom: 0;
         height: 90px;
         width: 110px;
     }
+
 
     80% {
         bottom: 400px;
@@ -50,9 +58,4 @@ html, body {
     from {left: 0;}
     to   {left: 90%;}
 }
-
-
-
-
-
 
