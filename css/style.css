@@ -5,7 +5,7 @@ html, body {
 }
 
 .ball-container {
-    height: 50%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: left;
@@ -20,10 +20,48 @@ html, body {
     border-radius: 50px;
     background: linear-gradient(to bottom, #4a4969 0%,#7072ab 50%,#cd82a0 100%);
     position: absolute;
+    right: 50px;
 }
+
+.ball-container > .ball-two {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #4a4969 0%,#7072ab 50%,#cd82a0 100%);
+    position: absolute;
+    right: 50px;
+    animation: bounce 2s linear infinite, Left 25s linear infinite alternate;
+}
+
+
 
 .ball-container > .ball:hover {
     cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+    from, to {
+        bottom: 150px;
+        height: 100px;
+        background: linear-gradient(to bottom, #4a4969 0%,#7072ab 50%,#cd82a0 100%);
+    }
+
+    40% {
+        bottom: 0;
+        height: 90px;
+        width: 110px;
+    }
+
+    80% {
+        bottom: 400px;
+        height: 100px;
+        background: linear-gradient(to bottom, #2473ab 0%,#1e528e 70%,#5b7983 100%);
+    }
+}
+
+@keyframes Left {
+    from {left: 0;}
+    to   {left: 90%;}
 }
 
 
